@@ -8,7 +8,7 @@ with open(os.path.join(here, 'README.rst')) as f:
 
 setup(
     name='sylk_parser',
-    version='0.5',
+    version='0.5.1',
     description='Basic SLK (sylk) to CSV parser',
     long_description=README,
     long_description_content_type='text/rst',
@@ -20,7 +20,7 @@ setup(
         'Topic :: Software Development :: Libraries',
         'Intended Audience :: Developers',
     ],
-    author='Majerti',
+    author='Majerti & wolke9',
     author_email='equipe@majerti.fr',
     url='https://github.com/majerteam/sylk_parser',
     keywords='parser csv slk sylk',

@@ -129,7 +129,7 @@ class SYLK:
         Escape a string
         """
         if s[0:1] == '"':
-            return '"' + re.sub('"', '\\"\\"', s[1:-1]) + '"'
+            return s[1:-1]
         return s
 
     def parse(self, stream):
@@ -192,7 +192,7 @@ class SYLK:
                 self.cury = int(val)
 
             elif ftd == "K":
-                val = eval(self.escape(val))
+                val = self.escape(val)
                 if type(val) == int:
                     if self.currenttype == "date":
                         # value is offset in days from datebase
